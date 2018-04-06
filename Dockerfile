@@ -1,5 +1,4 @@
-FROM tomcat:7-jre7
-MAINTAINER xyz
+FROM tomcat
 
 RUN ["rm", "-fr", "/usr/local/tomcat/webapps/ROOT"]
 COPY ./sample/sample.war /usr/local/tomcat/webapps/sample.war
