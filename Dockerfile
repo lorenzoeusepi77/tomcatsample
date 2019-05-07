@@ -9,4 +9,6 @@ COPY ./sample/test01.txt /usr/local/tomcat/webapps/
 #TO BE ADDED
 COPY ./sample/server /usr/local/tomcat/conf/
 
+EXPOSE 8089
+
 CMD ["catalina.sh", "run"]
